@@ -1,0 +1,268 @@
+Script started on 2023-06-26 14:48:01+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="123" LINES="21"]
+(base) ]0;siddharth@TIGER02034: /mnt/c/Windows/system32[01;32msiddharth@TIGER02034[00m:[01;34m/mnt/c/Windows/system32[00m$ cd ..
+(base) ]0;siddharth@TIGER02034: /mnt/c/Windows[01;32msiddharth@TIGER02034[00m:[01;34m/mnt/c/Windows[00m$ cd ..
+(base) ]0;siddharth@TIGER02034: /mnt/c[01;32msiddharth@TIGER02034[00m:[01;34m/mnt/c[00m$ cd ..
+(base) ]0;siddharth@TIGER02034: /mnt[01;32msiddharth@TIGER02034[00m:[01;34m/mnt[00m$ cd ..
+(base) ]0;siddharth@TIGER02034: /[01;32msiddharth@TIGER02034[00m:[01;34m/[00m$ cd..
+cd..: command not found
+(base) ]0;siddharth@TIGER02034: /[01;32msiddharth@TIGER02034[00m:[01;34m/[00m$ sudo umount
+[sudo] password for siddharth: 
+umount: bad usage
+Try 'umount --help' for more information.
+(base) ]0;siddharth@TIGER02034: /[01;32msiddharth@TIGER02034[00m:[01;34m/[00m$ umount --help
+
+Usage:
+ umount [-hV]
+ umount -a [options]
+ umount [options] <source> | <directory>
+
+Unmount filesystems.
+
+Options:
+ -a, --all               unmount all filesystems
+ -A, --all-targets       unmount all mountpoints for the given device in the
+                           current namespace
+ -c, --no-canonicalize   don't canonicalize paths
+ -d, --detach-loop       if mounted loop device, also free this loop device
+     --fake              dry run; skip the umount(2) syscall
+ -f, --force             force unmount (in case of an unreachable NFS system)
+ -i, --internal-only     don't call the umount.<type> helpers
+ -n, --no-mtab           don't write to /etc/mtab
+ -l, --lazy              detach the filesystem now, clean up things later
+ -O, --test-opts <list>  limit the set of filesystems (use with -a)
+ -R, --recursive         recursively unmount a target with all its children
+ -r, --read-only         in case unmounting fails, try to remount read-only
+ -t, --types <list>      limit the set of filesystem types
+ -v, --verbose           say what is being done
+ -q, --quiet             suppress 'not mounted' error messages
+ -N, --namespace <ns>    perform umount in another namespace
+
+ -h, --help              display this help
+ -V, --version           display version
+
+For more details see umount(8).
+(base) ]0;siddharth@TIGER02034: /[01;32msiddharth@TIGER02034[00m:[01;34m/[00m$ umount -a c
+umount: only root can use "--all" option
+(base) ]0;siddharth@TIGER02034: /[01;32msiddharth@TIGER02034[00m:[01;34m/[00m$ git init
+/.git: Permission denied
+(base) ]0;siddharth@TIGER02034: /[01;32msiddharth@TIGER02034[00m:[01;34m/[00m$ sudo atp[K[Kpt gwet[K[K[Ket install git
+[1;31mE: [0mInvalid operation get[0m
+(base) ]0;siddharth@TIGER02034: /[01;32msiddharth@TIGER02034[00m:[01;34m/[00m$ sudo apt-get install git
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+Suggested packages:
+  git-daemon-run | git-daemon-sysvinit git-doc git-el git-email git-gui gitk gitweb git-cvs git-mediawiki git-svn
+The following packages will be upgraded:
+  git
+1 upgraded, 0 newly installed, 0 to remove and 178 not upgraded.
+Need to get 4557 kB of archives.
+After this operation, 41.0 kB of additional disk space will be used.
+0% [Working]            Ign:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 git amd64 1:2.25.1-1ubuntu3.5
+0% [Working]            Err:1 http://security.ubuntu.com/ubuntu focal-updates/main amd64 git amd64 1:2.25.1-1ubuntu3.5
+  404  Not Found [IP: 2620:2d:4000:1::19 80]
+0% [Working]            E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.5_amd64.deb  404  Not Found [IP: 2620:2d:4000:1::19 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+(base) ]0;siddharth@TIGER02034: /[01;32msiddharth@TIGER02034[00m:[01;34m/[00m$ sudo apt-get updt[Kate
+0% [Working]            Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+0% [Waiting for headers] [Connected to apt.corretto.aws (108.159.15.89)] [Waiting for headers]                                                                                              Get:2 https://apt.corretto.aws stable InRelease [10.7 kB]
+                                                                                              0% [Waiting for headers] [Waiting for headers] [Waiting for headers]                                                                    Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+0% [3 InRelease 13.8 kB/114 kB 12%] [Waiting for headers] [Waiting for headers]                                                                               Get:4 http://ppa.launchpad.net/mmk2410/intellij-idea/ubuntu focal InRelease [18.1 kB]
+0% [3 InRelease 13.8 kB/114 kB 12%] [Waiting for headers] [4 InRelease 18.1 kB/18.1 kB 100%]                                                                                            0% [3 InRelease 13.8 kB/114 kB 12%] [Waiting for headers]                                                         0% [Waiting for headers]                        Get:5 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+0% [Waiting for headers] [5 InRelease 65.2 kB/114 kB 57%]                                                         0% [Waiting for headers]                        Get:6 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+0% [6 InRelease 2531 B/108 kB 2%]                                 0% [Working]0% [Working]0% [Working]0% [Working]            Get:7 https://apt.corretto.aws stable/main amd64 Packages [12.3 kB]
+0% [7 Packages 12.3 kB/12.3 kB 100%]                                    0% [Working]0% [7 Packages store 0 B]                         0% [Working]0% [Working]0% [Working]            Get:8 http://ppa.launchpad.net/mmk2410/intellij-idea/ubuntu focal/main amd64 Packages [628 B]
+0% [8 Packages 628 B/628 B 100%]                                0% [Working]0% [8 Packages store 0 B]                         0% [Working]0% [Working]0% [Working]0% [Waiting for headers]0% [Waiting for headers]0% [Waiting for headers] [Waiting for headers]                                                          61.5 kB/s 3min 25s0% [Waiting for headers] [Waiting for headers]                                                          61.5 kB/s 3min 25s16% [Waiting for headers] [Waiting for headers]                                                         61.5 kB/s 3min 26s16% [Waiting for headers] [Waiting for headers]                                                         61.5 kB/s 3min 26s                                                                                                                          Get:9 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [2649 kB]
+17% [9 Packages 65.3 kB/2649 kB 2%] [Waiting for headers]                                               61.5 kB/s 3min 25s32% [Waiting for headers]                                                                               61.5 kB/s 2min 43s32% [9 Packages store 0 B] [Waiting for headers]                                                        61.5 kB/s 2min 43s                                                                                                                          Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [444 kB]
+33% [9 Packages store 0 B] [10 Translation-en 37.9 kB/444 kB 9%] [Waiting for headers]                  61.5 kB/s 2min 43s35% [9 Packages store 0 B] [Waiting for headers]                                                        61.5 kB/s 2min 36s35% [Waiting for headers] [Waiting for headers]                                                         61.5 kB/s 2min 36s35% [10 Translation-en store 0 B] [Waiting for headers] [Waiting for headers]                           61.5 kB/s 2min 36s                                                                                                                          Get:11 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [16.9 kB]
+35% [10 Translation-en store 0 B] [11 Commands-amd64 16.9 kB/16.9 kB 100%] [Waiting for headers]        61.5 kB/s 2min 36s35% [10 Translation-en store 0 B] [Waiting for headers]                                                 61.5 kB/s 2min 36s36% [Waiting for headers] [Waiting for headers]                                                         61.5 kB/s 2min 36s36% [11 Commands-amd64 store 0 B] [Waiting for headers] [Waiting for headers]                           61.5 kB/s 2min 36s36% [Waiting for headers] [Waiting for headers]                                                         61.5 kB/s 2min 36s                                                                                                                          Get:12 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [1994 kB]
+36% [12 Packages 35.3 kB/1994 kB 2%] [Waiting for headers]                                              61.5 kB/s 2min 35s48% [Waiting for headers]                                                                                61.5 kB/s 2min 3s48% [12 Packages store 0 B] [Waiting for headers] [Waiting for headers]                                  61.5 kB/s 2min 3s                                                                                                                          Get:13 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [280 kB]
+48% [12 Packages store 0 B] [13 Translation-en 65.5 kB/280 kB 23%] [Waiting for headers]                 61.5 kB/s 2min 2s50% [12 Packages store 0 B] [Waiting for headers]                                                       61.5 kB/s 1min 59s50% [Waiting for headers] [Waiting for headers]                                                         61.5 kB/s 1min 59s50% [13 Translation-en store 0 B] [Waiting for headers] [Waiting for headers]                           61.5 kB/s 1min 59s50% [Waiting for headers] [Waiting for headers]                                                         61.5 kB/s 1min 59s                                                                                                                          Get:14 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [636 B]
+50% [14 Commands-amd64 636 B/636 B 100%] [Waiting for headers]                                          61.5 kB/s 1min 59s50% [Waiting for headers]                                                                               61.5 kB/s 1min 59s50% [14 Commands-amd64 store 0 B] [Waiting for headers] [Waiting for headers]                           61.5 kB/s 1min 59s50% [Waiting for headers] [Waiting for headers]                                                         61.5 kB/s 1min 59s                                                                                                                          Get:15 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1074 kB]
+51% [15 Packages 41.9 kB/1074 kB 4%] [Waiting for headers]                                              61.5 kB/s 1min 58s57% [Waiting for headers]                                                                               61.5 kB/s 1min 41s57% [15 Packages store 0 B] [Waiting for headers] [Waiting for headers]                                 61.5 kB/s 1min 41s57% [Waiting for headers] [Waiting for headers]                                                         61.5 kB/s 1min 41s                                                                                                                          Get:16 http://archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [256 kB]
+57% [16 Translation-en 0 B/256 kB 0%] [Waiting for headers]                                             61.5 kB/s 1min 41s59% [Waiting for headers]                                                                               61.5 kB/s 1min 37s59% [16 Translation-en store 0 B] [Waiting for headers] [Waiting for headers]                           61.5 kB/s 1min 37s59% [Waiting for headers] [Waiting for headers]                                                         61.5 kB/s 1min 37s                                                                                                                          Get:17 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [25.1 kB]
+59% [17 Commands-amd64 25.1 kB/25.1 kB 100%] [Waiting for headers]                                      61.5 kB/s 1min 37s59% [Waiting for headers]                                                                               61.5 kB/s 1min 37s59% [17 Commands-amd64 store 0 B] [Waiting for headers] [Waiting for headers]                           61.5 kB/s 1min 37s59% [Waiting for headers] [Waiting for headers]                                                         61.5 kB/s 1min 37s                                                                                                                          Get:18 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [25.2 kB]
+59% [18 Packages 8471 B/25.2 kB 34%] [Waiting for headers]                                              61.5 kB/s 1min 37s59% [Waiting for headers]                                                                               61.5 kB/s 1min 36s59% [18 Packages store 0 B] [Waiting for headers] [Waiting for headers]                                 61.5 kB/s 1min 36s60% [Waiting for headers] [Waiting for headers]                                                         61.5 kB/s 1min 36s                                                                                                                          Get:19 http://archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [7408 B]
+60% [19 Translation-en 7408 B/7408 B 100%] [Waiting for headers]                                        61.5 kB/s 1min 36s60% [Waiting for headers]                                                                               61.5 kB/s 1min 36s                                                                                                                          60% [19 Translation-en store 0 B] [Connecting to archive.ubuntu.com (2620:2d:4000:1::19)] [Waiting for headers]                                                                                                               Get:20 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [2267 kB]
+60% [19 Translation-en store 0 B] [Connecting to archive.ubuntu.com (2620:2d:4000:1::19)] [20 Packages 65.5 kB/2267 kB 3%]65% [Connecting to archive.ubuntu.com (2620:2d:4000:1::19)] [20 Packages 786 kB/2267 kB 35%]            61.5 kB/s 1min 23s74% [Connecting to archive.ubuntu.com (2620:2d:4000:1::19)]                                                  61.5 kB/s 59s74% [20 Packages store 0 B] [Connecting to archive.ubuntu.com (2620:2d:4000:1::19)]                          61.5 kB/s 59s74% [Waiting for headers] [Waiting for headers]                                                              61.5 kB/s 59s                                                                                                                          Get:21 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [612 B]
+74% [21 Commands-amd64 612 B/612 B 100%] [Waiting for headers]                                               61.5 kB/s 59s74% [Waiting for headers]                                                                                    61.5 kB/s 59s74% [21 Commands-amd64 store 0 B] [Waiting for headers] [Waiting for headers]                                61.5 kB/s 59s74% [Waiting for headers] [Waiting for headers]                                                              61.5 kB/s 59s                                                                                                                          Get:22 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [45.7 kB]
+74% [22 Packages 12.5 kB/45.7 kB 27%] [Waiting for headers]                                                  61.5 kB/s 59s74% [Waiting for headers]                                                                                    61.5 kB/s 59s74% [22 Packages store 0 B] [Waiting for headers] [Waiting for headers]                                      61.5 kB/s 59s75% [Waiting for headers] [Waiting for headers]                                                              61.5 kB/s 59s                                                                                                                          Get:23 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [1420 B]
+75% [23 Commands-amd64 1420 B/1420 B 100%] [Waiting for headers]                                             61.5 kB/s 59s75% [Waiting for headers]                                                                                    61.5 kB/s 59s75% [23 Commands-amd64 store 0 B] [Waiting for headers] [Waiting for headers]                                61.5 kB/s 59s75% [Waiting for headers] [Waiting for headers]                                                              61.5 kB/s 59s                                                                                                                          Get:24 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [25.0 kB]
+75% [24 Packages 2617 B/25.0 kB 10%] [Waiting for headers]                                                   61.5 kB/s 59s75% [Waiting for headers]                                                                                    61.5 kB/s 58s75% [24 Packages store 0 B] [Waiting for headers] [Waiting for headers]                                      61.5 kB/s 58s75% [Waiting for headers] [Waiting for headers]                                                              61.5 kB/s 58s                                                                                                                          Get:25 http://archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [16.3 kB]
+75% [25 Translation-en 2617 B/16.3 kB 16%] [Waiting for headers]                                             61.5 kB/s 58s75% [Waiting for headers]                                                                                    61.5 kB/s 58s75% [25 Translation-en store 0 B] [Waiting for headers] [Waiting for headers]                                61.5 kB/s 58s76% [Waiting for headers] [Waiting for headers]                                                              61.5 kB/s 58s                                                                                                                          Get:26 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [880 B]
+76% [26 Commands-amd64 880 B/880 B 100%] [Waiting for headers]                                               61.5 kB/s 58s76% [Waiting for headers]                                                                                    61.5 kB/s 58s76% [26 Commands-amd64 store 0 B] [Waiting for headers]                                                      61.5 kB/s 58s76% [Waiting for headers]                                                                                    61.5 kB/s 58s                                                                                                                          Get:27 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [362 kB]
+76% [27 Translation-en 65.3 kB/362 kB 18%]                                                                   61.5 kB/s 57s78% [Working]                                                                                                61.5 kB/s 52s78% [27 Translation-en store 0 B] [Waiting for headers]                                                      61.5 kB/s 52s78% [Waiting for headers]                                                                                    61.5 kB/s 52s                                                                                                                          Get:28 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [13.0 kB]
+78% [28 Commands-amd64 5441 B/13.0 kB 42%]                                                                   61.5 kB/s 52s78% [Working]                                                                                                61.5 kB/s 52s78% [28 Commands-amd64 store 0 B] [Waiting for headers]                                                      61.5 kB/s 52s78% [Waiting for headers]                                                                                    61.5 kB/s 52s                                                                                                                          Get:29 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [1885 kB]
+79% [29 Packages 9673 B/1885 kB 1%]                                                                          61.5 kB/s 52s83% [29 Packages 786 kB/1885 kB 42%]                                                                          1668 kB/s 1s90% [Working]                                                                                                 1668 kB/s 0s90% [29 Packages store 0 B] [Waiting for headers]                                                             1668 kB/s 0s90% [Waiting for headers]                                                                                     1668 kB/s 0s                                                                                                                          Get:30 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [264 kB]
+90% [30 Translation-en 0 B/264 kB 0%]                                                                         1668 kB/s 0s92% [Working]                                                                                                 1668 kB/s 0s92% [30 Translation-en store 0 B] [Waiting for headers]                                                       1668 kB/s 0s92% [Waiting for headers]                                                                                     1668 kB/s 0s                                                                                                                          Get:31 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [640 B]
+92% [31 Commands-amd64 640 B/640 B 100%]                                                                      1668 kB/s 0s92% [Working]                                                                                                 1668 kB/s 0s92% [31 Commands-amd64 store 0 B] [Waiting for headers]                                                       1668 kB/s 0s92% [Waiting for headers]                                                                                     1668 kB/s 0s                                                                                                                          Get:32 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [849 kB]
+92% [32 Packages 29.2 kB/849 kB 3%]                                                                           1668 kB/s 0s97% [Working]                                                                                                 1668 kB/s 0s97% [32 Packages store 0 B] [Waiting for headers]                                                             1668 kB/s 0s98% [Waiting for headers]                                                                                     1668 kB/s 0s                                                                                                                          Get:33 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [176 kB]
+98% [33 Translation-en 25.2 kB/176 kB 14%]                                                                    1668 kB/s 0s99% [Working]                                                                                                 1668 kB/s 0s99% [33 Translation-en store 0 B] [Waiting for headers]                                                       1668 kB/s 0s99% [Waiting for headers]                                                                                     1668 kB/s 0s                                                                                                                          Get:34 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [18.6 kB]
+99% [34 Commands-amd64 18.6 kB/18.6 kB 100%]                                                                  1668 kB/s 0s99% [Working]                                                                                                 1668 kB/s 0s99% [34 Commands-amd64 store 0 B] [Waiting for headers]                                                       1668 kB/s 0s99% [Waiting for headers]                                                                                     1668 kB/s 0s                                                                                                                          Get:35 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [22.9 kB]
+99% [35 Packages 22.9 kB/22.9 kB 100%]                                                                        1668 kB/s 0s99% [Working]                                                                                                 1668 kB/s 0s99% [35 Packages store 0 B] [Waiting for headers]                                                             1668 kB/s 0s100% [Waiting for headers]                                                                                    1668 kB/s 0s                                                                                                                          Get:36 http://security.ubuntu.com/ubuntu focal-security/multiverse Translation-en [5488 B]
+100% [36 Translation-en 5488 B/5488 B 100%]                                                                   1668 kB/s 0s100% [Working]                                                                                                1668 kB/s 0s100% [36 Translation-en store 0 B] [Waiting for headers]                                                      1668 kB/s 0s100% [Waiting for headers]                                                                                    1668 kB/s 0s                                                                                                                          Get:37 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [540 B]
+100% [37 Commands-amd64 540 B/540 B 100%]                                                                     1668 kB/s 0s100% [Working]                                                                                                1668 kB/s 0s100% [37 Commands-amd64 store 0 B]                                                                            1668 kB/s 0s100% [Working]                                                                                                1668 kB/s 0s                                                                                                                          Fetched 13.1 MB in 15s (887 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 3%Reading package lists... 3%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 32%Reading package lists... 32%Reading package lists... 46%Reading package lists... 46%Reading package lists... 47%Reading package lists... 47%Reading package lists... 47%Reading package lists... 47%Reading package lists... 55%Reading package lists... 55%Reading package lists... 60%Reading package lists... 60%Reading package lists... 67%Reading package lists... 67%Reading package lists... 70%Reading package lists... 70%Reading package lists... 73%Reading package lists... 73%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 74%Reading package lists... 75%Reading package lists... 75%Reading package lists... 75%Reading package lists... 75%Reading package lists... 75%Reading package lists... 81%Reading package lists... 81%Reading package lists... 86%Reading package lists... 86%Reading package lists... 92%Reading package lists... 92%Reading package lists... 95%Reading package lists... 95%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+(base) ]0;siddharth@TIGER02034: /[01;32msiddharth@TIGER02034[00m:[01;34m/[00m$ sudo apt-get install git
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+Suggested packages:
+  git-daemon-run | git-daemon-sysvinit git-doc git-el git-email git-gui gitk gitweb git-cvs git-mediawiki git-svn
+The following packages will be upgraded:
+  git
+1 upgraded, 0 newly installed, 0 to remove and 305 not upgraded.
+Need to get 4605 kB of archives.
+After this operation, 303 kB of additional disk space will be used.
+0% [Working]0% [Waiting for headers]0% [Waiting for headers]0% [Waiting for headers]0% [Waiting for headers]0% [Waiting for headers]0% [Waiting for headers]0% [Waiting for headers]0% [Waiting for headers]0% [Waiting for headers]0% [Waiting for headers]                        Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 git amd64 1:2.25.1-1ubuntu3.11 [4605 kB]
+1% [1 git 65.3 kB/4605 kB 1%]                             100% [Working]              Fetched 4605 kB in 5s (883 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 68046 files and directories currently installed.)
+Preparing to unpack .../git_1%3a2.25.1-1ubuntu3.11_amd64.deb ...
+Unpacking git (1:2.25.1-1ubuntu3.11) over (1:2.25.1-1ubuntu3.2) ...
+Setting up git (1:2.25.1-1ubuntu3.11) ...
+(base) ]0;siddharth@TIGER02034: /[01;32msiddharth@TIGER02034[00m:[01;34m/[00m$ git init
+/.git: Permission denied
+(base) ]0;siddharth@TIGER02034: /[01;32msiddharth@TIGER02034[00m:[01;34m/[00m$ sudo umount
+umount: bad usage
+Try 'umount --help' for more information.
+(base) ]0;siddharth@TIGER02034: /[01;32msiddharth@TIGER02034[00m:[01;34m/[00m$ umount --[K[K[K[K[K[K[K[K[Kumount --help
+
+Usage:
+ umount [-hV]
+ umount -a [options]
+ umount [options] <source> | <directory>
+
+Unmount filesystems.
+
+Options:
+ -a, --all               unmount all filesystems
+ -A, --all-targets       unmount all mountpoints for the given device in the
+                           current namespace
+ -c, --no-canonicalize   don't canonicalize paths
+ -d, --detach-loop       if mounted loop device, also free this loop device
+     --fake              dry run; skip the umount(2) syscall
+ -f, --force             force unmount (in case of an unreachable NFS system)
+ -i, --internal-only     don't call the umount.<type> helpers
+ -n, --no-mtab           don't write to /etc/mtab
+ -l, --lazy              detach the filesystem now, clean up things later
+ -O, --test-opts <list>  limit the set of filesystems (use with -a)
+ -R, --recursive         recursively unmount a target with all its children
+ -r, --read-only         in case unmounting fails, try to remount read-only
+ -t, --types <list>      limit the set of filesystem types
+ -v, --verbose           say what is being done
+ -q, --quiet             suppress 'not mounted' error messages
+ -N, --namespace <ns>    perform umount in another namespace
+
+ -h, --help              display this help
+ -V, --version           display version
+
+For more details see umount(8).
+(base) ]0;siddharth@TIGER02034: /[01;32msiddharth@TIGER02034[00m:[01;34m/[00m$ umount -A
+umount: only root can use "--all-targets" option
+(base) ]0;siddharth@TIGER02034: /[01;32msiddharth@TIGER02034[00m:[01;34m/[00m$ cd root
+bash: cd: root: Permission denied
+(base) ]0;siddharth@TIGER02034: /[01;32msiddharth@TIGER02034[00m:[01;34m/[00m$ ls
+[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;36mlib[0m    [01;36mlib64[0m   [01;34mmedia[0m  [01;34mopt[0m   [01;34mroot[0m  [01;36msbin[0m  [01;34msrv[0m  [30;42mtmp[0m  [01;34mvar[0m
+[01;34mboot[0m  [01;34metc[0m  [01;32minit[0m  [01;36mlib32[0m  [01;36mlibx32[0m  [01;34mmnt[0m    [01;34mproc[0m  [01;34mrun[0m   [01;34msnap[0m  [01;34msys[0m  [01;34musr[0m
+(base) ]0;siddharth@TIGER02034: /[01;32msiddharth@TIGER02034[00m:[01;34m/[00m$ git config --global usern.name "Siddharth Sundar"
+(base) ]0;siddharth@TIGER02034: /[01;32msiddharth@TIGER02034[00m:[01;34m/[00m$ git o[Kconfig =-[K[K--global user.email johnde[Koe[K[K[K[K[K[K[Ksiddharth.sundar@tigeranalhy[K[Kytics.com
+(base) ]0;siddharth@TIGER02034: /[01;32msiddharth@TIGER02034[00m:[01;34m/[00m$ git config --list
+[?1h=usern.name=Siddharth Sundar[m
+user.email=siddharth.sundar@tigeranalytics.com[m
+[K[?1l>(base) ]0;siddharth@TIGER02034: /[01;32msiddharth@TIGER02034[00m:[01;34m/[00m$ cd hoe[Kme
+(base) ]0;siddharth@TIGER02034: /home[01;32msiddharth@TIGER02034[00m:[01;34m/home[00m$ cd siddharth
+(base) ]0;siddharth@TIGER02034: ~[01;32msiddharth@TIGER02034[00m:[01;34m~[00m$ cd home
+bash: cd: home: No such file or directory
+(base) ]0;siddharth@TIGER02034: ~[01;32msiddharth@TIGER02034[00m:[01;34m~[00m$ ls
+Miniconda3-4.7.12.1-Linux-x86_64.sh     Untitled.ipynb   my_conda_session        wget-log
+Miniconda3-4.7.12.1-Linux-x86_64.sh.1   Untitled1.ipynb  my_final_conda_session
+Miniconda3-4.7.12.1-Linux-x86_64.sh.2   Untitled2.ipynb  my_unix_session
+Miniconda3-py39_4.10.3-Linux-x86_64.sh  [0m[01;34mminiconda3[0m       [01;34mshell-lesson-data[0m
+(base) ]0;siddharth@TIGER02034: ~[01;32msiddharth@TIGER02034[00m:[01;34m~[00m$ mkdir my_prj[Koj
+(base) ]0;siddharth@TIGER02034: ~[01;32msiddharth@TIGER02034[00m:[01;34m~[00m$ git[K[K[Kcd my_proj
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ git init
+Initialized empty Git repository in /home/siddharth/my_proj/.git/
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ git add README.md
+fatal: pathspec 'README.md' did not match any files
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ git add LICENSE
+fatal: pathspec 'LICENSE' did not match any files
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ GIT [K[K[K[Kgit checo[Kkout -b master
+Switched to a new branch 'master'
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ git commit -m 'Initial project version'
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <siddharth.sundar@tigeranalytics.com>) not allowed
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ git config user.email ""s"i"d"d"h"a"r"t"h"."s"u"n"d"a"r"@"t"i"g"e"r"a"n"a"l"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[K[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"e"r"[1P"[1P"s"e"r"."n"a"m"e" "[CSiddharth Sundar[C[1@ [1@-[1@-[1@g[1@l[1@o[1@b[1@a[1@l[C[1@ [C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C"
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ git config --globl[Kal user.email "Siddharth[K[K[K[K[K[K[K[K[Kdiff[K[K[K[Ksiddharth.sundar@tigeranalytics.com"
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ git o[Kco[K[Kadd LICV[KENSE
+fatal: pathspec 'LICENSE' did not match any files
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ git commint -m[K[K[K[K[Kt -m "Initial Proe[Kject Version"
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ git branch -M main
+error: refname refs/heads/master not found
+fatal: Branch rename failed
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ git branch -M master
+error: refname refs/heads/master not found
+fatal: Branch rename failed
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ git remote add origin git@github.com:siddharth-sundar-2000/Private-Trial-Repo.git
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ git push -u origin main
+error: src refspec main does not match any
+[31merror: failed to push some refs to 'git@github.com:siddharth-sundar-2000/Private-Trial-Repo.git'
+[m(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ gt[Kit push -u origin master
+error: src refspec master does not match any
+[31merror: failed to push some refs to 'git@github.com:siddharth-sundar-2000/Private-Trial-Repo.git'
+[m(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ echo 'My Project' > README[1P[1P[1P[1P[1P[1@o[1@j[1@e[1@c[1@t[C[C[C[C[C[C[C[C[C[C
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ git add README
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ GIT [K[K[K[Kgit status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	[32mnew file:   README[m
+
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ git commint [K[K[Kt -m "Commit Readme"
+[master (root-commit) f5cab1a] Commit Readme
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ git log
+[?1h=[33mcommit f5cab1a1fe82f1d9ba0ccb7f5785986cf1039b02[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m[m
+Author: Siddharth Sundar <siddharth.sundar@tigeranalytics.com>[m
+Date:   Mon Jun 26 15:11:22 2023 +0530[m
+[m
+    Commit Readme[m
+[K[?1l>(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ git branch testing
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ git ce[Kheckout testing
+Switched to branch 'testing'
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ git checkot[Kut master
+Switched to branch 'master'
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ git merge testing
+Already up to date.
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ git branch --all
+[?1h=* [32mmaster[m[m
+  testing[m[m
+[K[?1l>(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ git branch --move master main
+(base) ]0;siddharth@TIGER02034: ~/my_proj[01;32msiddharth@TIGER02034[00m:[01;34m~/my_proj[00m$ exit
+exit
+
+Script done on 2023-06-26 15:38:50+05:30 [COMMAND_EXIT_CODE="0"]
